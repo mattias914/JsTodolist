@@ -4,6 +4,25 @@ const btn = document.querySelector('button');
 
 let tareas = [];
 
+tareas.push({
+    id: obtenerNuevoID(),
+    texto: 'Crear el index html',
+    completada: true
+});
+tareas.push({
+    id: obtenerNuevoID(),
+    texto: 'Crear el css',
+    completada: true
+});
+tareas.push({
+    id: obtenerNuevoID(),
+    texto: 'Crear todo el js',
+    completada: true
+});
+
+
+renderizarTareas();
+
 btn.addEventListener('click', () => {
     if (inputLista.value === ''){
         alert('No se puede agregar un campo vacío!')
